@@ -15,7 +15,6 @@ document.addEventListener("change", (event, string1) => {
 // let num2 = document.querySelector("#secondDivisible").innerHTML
 
 // .addEventListener("change", textContents());
-hiiiii
 
 //create a variable that passes a function that will be our fizzbuzz game with variables that can be changed
 function fizzBuzzGame(string1, string2 = 'buzz', num1 = 3, num2 = 5) {
