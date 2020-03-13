@@ -5,10 +5,10 @@ let string1 = document.querySelector("input[name='firstInput']").value;
 
 // console.log(string1)
 
- document.addEventListener("change", (event, string1) => {
-   
+ document.addEventListener("change", (event) => {
+    
+    //set string1 from input on DOM 
     string1 = event.target.value;
-
 
     //create a variable that passes a function that will be our fizzbuzz game with variables that can be changed
     let fizzBuzzGame = (string1, string2 = 'buzz', num1 = 3, num2 = 5) => {
