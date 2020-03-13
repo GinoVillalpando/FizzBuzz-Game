@@ -1,25 +1,36 @@
 
 
 
-let string1 = document.querySelector("[name='firstInput']").textContent;
-
-console.log(string1)
-
-document.addEventListener("change", (event, string1) => {
-    let results = document.getElementById("results");
-    results.innerHTML = event.target.value;   
+let string1 = document.querySelector("input[name='firstInput']")
+    .addEventListener("change", (event) => {
+    string1 = event.target.value;
     console.log(string1)
 });
+
+// console.log(string1)
+
+// string1.addEventListener("change", (event) => {
+//     string1 = event.target.value;
+//     console.log(string1)   
+// });
 // let string2 = document.querySelector("#secondInput").innerHTML
 // let num1 = document.querySelector("#firstDivisble").innerHTML
 // let num2 = document.querySelector("#secondDivisible").innerHTML
 
-// .addEventListener("change", textContents());
+// .addEventListener("change", textContents());innerHTML
+// console.log(results)
+
+// function setInput(event){
+//     if()
+// }
+
+console.log(string1)
 
 //create a variable that passes a function that will be our fizzbuzz game with variables that can be changed
 function fizzBuzzGame(string1, string2 = 'buzz', num1 = 3, num2 = 5) {
 
 
+    console.log(string1)
     //create variable that will be an array
     let output = [];
 
@@ -42,4 +53,5 @@ function fizzBuzzGame(string1, string2 = 'buzz', num1 = 3, num2 = 5) {
     return output;
 }
 
-console.log(fizzBuzzGame());
+
+console.log(fizzBuzzGame(string1, "buzz", 3, 5));
