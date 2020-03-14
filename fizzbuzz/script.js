@@ -5,7 +5,7 @@
  * author: Gino Villalpando GinoVillalpandoWork@gmail.com
  */
 
-//  hi
+
 let string1 = document.querySelector("input[name='firstInput']").value;
 
 //run these blocks of code when the word has been entered for the first input
