@@ -1,16 +1,20 @@
+/**
+ * Fizz Buzz Javascript to set your own variables for divisble by and the words that replaces 
+ * the numeric values with strings
+ * 
+ * author: Gino Villalpando GinoVillalpandoWork@gmail.com
+ */
 
-
-
+//  hi
 let string1 = document.querySelector("input[name='firstInput']").value;
 
-// console.log(string1)
-
- document.addEventListener("change", (event) => {
+//run these blocks of code when the word has been entered for the first input
+document.addEventListener("change", (event) => {
     
     //set string1 from input on DOM 
     string1 = event.target.value;
 
-    //create a variable that passes a function that will be our fizzbuzz game with variables that can be changed
+    //FizzBuzz Function that will manipulate our variables set from the DOM
     let fizzBuzzGame = (string1, string2 = 'buzz', num1 = 3, num2 = 5) => {
 
 
