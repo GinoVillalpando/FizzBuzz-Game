@@ -31,6 +31,6 @@ document.addEventListener("change", () => {
                 output.push(i);
             }
         } return output;
-    } console.log(fizzBuzzGame());
+    } document.getElementById("results").innerHTML = fizzBuzzGame();
 });
 
