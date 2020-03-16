@@ -16,15 +16,13 @@ document.addEventListener("submit", () => {
         let num1 = document.querySelector("input[name='firstNum']").value;
         let num2 = document.querySelector("input[name='secondNum']").value;
         
-        //create variable that will be an array
+        //declare variable that will be the array
         let output = [];
-
-        
 
         //use for loop to iterate array starting at the index of 0 and incrementing each time the loop has finished
         for(let i = 1; i <= 100; i++){
             
-            //if, else if, and else statements that check if the number variables are divisble
+            //conditionals that check if the number is divisible by the value from the DOM if so replace with the strings set from the DOM as well
             if( i % num1 === 0 && i % num2 === 0 ) {
                 output.push(string1 + " " + string2); 
             } else if( i % num1 === 0 ) { 
@@ -34,9 +32,12 @@ document.addEventListener("submit", () => {
             } else {
                 output.push(i);
             }
+
+        //return the array with the finished iteration
         } return output;
-    };
-    fizzBuzzGame()
+    
+    //forEach loop that iterates the finished output for fizzBuzzGame and adds HTML elements and manipulates the DOM
+    }; fizzBuzzGame()
         .forEach((item) => {
 
             let li = document.createElement("li");
