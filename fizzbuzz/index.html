@@ -10,13 +10,20 @@
         <script src="script.js" type="text/javascript" async defer></script>
     </head>
     <body>
-        
-        <input type='text' name='firstInput' placeholder='word' />
-        <input type='text' name='secondInput' placeholder='word' />
-        <input type='number' name='firstNum' placeholder='number' />
-        <input type='number' name='secondNum' placeholder='number' />
+        <div>
+            <input type='text' name='firstInput' placeholder='word' />
+        </div>
+        <div>
+            <input type='text' name='secondInput' placeholder='word' />
+        </div>
+        <div>
+            <input type='number' name='firstNum' placeholder='number' />
+        </div>
+        <div>
+            <input type='number' name='secondNum' placeholder='number' />
+        </div>
 
-        <p id="results"></p>
+        <p id="results" onchange="fizzBuzzGame()"></p>
         
     </body>
 </html>
