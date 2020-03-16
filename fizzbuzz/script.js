@@ -4,7 +4,9 @@
  * 
  * author: Gino Villalpando GinoVillalpandoWork@gmail.com
  */
-document.addEventListener("change", () => {
+document.addEventListener("submit", () => {
+
+    event.preventDefault();
 
     //FizzBuzz Function that will manipulate our variables set from the DOM
     function fizzBuzzGame() {
@@ -34,13 +36,14 @@ document.addEventListener("change", () => {
             }
         } return output;
     };
-});
+    fizzBuzzGame()
+        .forEach((item) => {
 
-fizzBuzzGame().forEach((item) => {
-    var li = document.createElement("li");
-    var text = document.createTextNode(item);
-    li.appendChild(text);
-    document.getElementById("results").appendChild(li);
-    console.log(fizzBuzzGame())
-  });
+            let li = document.createElement("li");
+            let text = document.createTextNode(item);
+
+            li.appendChild(text);
+            document.getElementById("results").appendChild(li).innerHTML;
+      });
+});
 
