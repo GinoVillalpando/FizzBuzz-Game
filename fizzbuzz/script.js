@@ -4,18 +4,18 @@
  * 
  * author: Gino Villalpando GinoVillalpandoWork@gmail.com
  */
-
+document.addEventListener("change", (event) => {
 
 let string1 = document.querySelector("input[name='firstInput']").value;
+let string2 = document.querySelector("input[name='secondInput']").value;
+let num1 = document.querySelector("input[name='firstNum']").value;
+let num2 = document.querySelector("input[name='secondNum']").value;
 
 //run these blocks of code when the word has been entered for the first input
-document.addEventListener("change", (event) => {
-    
-    //set string1 from input on DOM 
-    string1 = event.target.value;
+
 
     //FizzBuzz Function that will manipulate our variables set from the DOM
-    let fizzBuzzGame = (string1, string2 = 'buzz', num1 = 3, num2 = 5) => {
+    let fizzBuzzGame = (string1, string2, num1, num2) => {
 
 
         //create variable that will be an array
@@ -36,9 +36,8 @@ document.addEventListener("change", (event) => {
             }
 
         }
-
         return output;
     }
-    console.log(fizzBuzzGame(string1, "buzz", 3, 5));
+    console.log(fizzBuzzGame(string1, string2, num1, num2));
 });
 
