@@ -1,2 +1,2 @@
-# interview-practice
-practice repo for interview questions 
+# Fizz Buzz
+Fizz Buzz app that takes your own words and numbers to be divisible by
