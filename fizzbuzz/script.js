@@ -17,6 +17,8 @@ document.addEventListener("change", () => {
         //create variable that will be an array
         let output = [];
 
+        
+
         //use for loop to iterate array starting at the index of 0 and incrementing each time the loop has finished
         for(let i = 1; i <= 100; i++){
             
@@ -31,6 +33,14 @@ document.addEventListener("change", () => {
                 output.push(i);
             }
         } return output;
-    } document.getElementById("results").innerHTML = fizzBuzzGame();
+    };
 });
+
+fizzBuzzGame().forEach((item) => {
+    var li = document.createElement("li");
+    var text = document.createTextNode(item);
+    li.appendChild(text);
+    document.getElementById("results").appendChild(li);
+    console.log(fizzBuzzGame())
+  });
 

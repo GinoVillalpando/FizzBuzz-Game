@@ -3,27 +3,35 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Fizz Buzz Game</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <script src="script.js" type="text/javascript" async defer></script>
     </head>
     <body>
-        <div>
-            <input type='text' name='firstInput' placeholder='word' />
-        </div>
-        <div>
-            <input type='text' name='secondInput' placeholder='word' />
-        </div>
-        <div>
-            <input type='number' name='firstNum' placeholder='number' />
-        </div>
-        <div>
-            <input type='number' name='secondNum' placeholder='number' />
-        </div>
 
-        <p id="results" onchange="fizzBuzzGame()"></p>
+        <form id="form">
+            <label>
+                First Word: <input type='text' name='firstInput' placeholder='word' />
+            </label><br/>
+            <label>
+                Second Word: <input type='text' name='secondInput' placeholder='word' />
+            </label><br/>
+            <label>
+                First Divisible:  <input type='number' name='firstNum' placeholder='number' />
+            </label><br/>
+            <label>
+                Second Divisible:  <input type='number' name='secondtNum' placeholder='number' />
+            </label>
+            <br><br>
+            <button type="submit">Submit form</button>
+          </form>
+
+            <ul>
+                <li id="results"></li>
+            </ul>
+        
         
     </body>
 </html>
