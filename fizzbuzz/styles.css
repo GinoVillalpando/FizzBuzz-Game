@@ -1,0 +1,9 @@
+li {
+    padding: 1rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+label[class="col"] {
+    text-align: center;
+}
