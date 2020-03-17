@@ -22,22 +22,31 @@
     <body>
         
         <!-- submission form that will take the values for the fizz buzz game -->
-        <form class="form-group p-5 d-flex justify-content-center align-items-center" id="form">
-            <label class="col">
-                First Word: <input type='text' name='firstInput' placeholder='word' />
-            </label>
-            <label class="col">
-                Second Word: <input type='text' name='secondInput' placeholder='word' />
-            </label>
-            <label class="col">
-                First Divisible:  <input type='number' name='firstNum' placeholder='number' />
-            </label>
-            <label class="col">
-                Second Divisible:  <input type='number' name='secondNum' placeholder='number' />
-            </label>
-            
+
+        <form class="col-12 col-lg-4 mx-auto m-5 p-5">
+            <div class="form-group">
+              <label for="firstWord">First Word</label>
+              <input type="text" class="form-control" id="firstWord" name="firstInput" placeholder="Fizz">
+              <small aria-disabled="true" class="form-text text-muted">This will take the place of Fizz.</small>
+            </div>
+            <div class="form-group">
+              <label for="secondWord">Second Word</label>
+              <input type="text" class="form-control" id="secondWord" name="secondInput" placeholder="Buzz">
+              <small aria-disabled="true" class="form-text text-muted">This will take the place of Buzz.</small>
+            </div>
+            <div class="form-group">
+                <label for="firstNum">First Divisible</label>
+                <input type="text" class="form-control" id="firstNum" name="firstNum" placeholder="0">
+                <small aria-disabled="true" class="form-text text-muted">These divisibles will be replaced by the first word.</small>
+            </div>
+            <div class="form-group">
+                <label for="secondNum">Second Divisible</label>
+                <input type="text" class="form-control" id="secondNum" name="secondNum" placeholder="0">
+                <small aria-disabled="true" class="form-text text-muted">These divisibles will be replaced by the second word.</small>
+            </div>
             <button type="submit" class="btn btn-dark">Let's play FizzBuzz</button>
-        </form>
+          </form>
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6 mx-auto">
