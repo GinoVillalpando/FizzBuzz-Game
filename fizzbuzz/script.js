@@ -4,12 +4,13 @@
  * 
  * author: Gino Villalpando GinoVillalpandoWork@gmail.com
  */
-document.addEventListener("submit", () => {
+document.addEventListener("submit", (event) => {
 
     event.preventDefault();
 
     //FizzBuzz Function that will manipulate our variables set from the DOM
     function fizzBuzzGame() {
+
 
         let string1 = document.querySelector("input[name='firstInput']").value;
         let string2 = document.querySelector("input[name='secondInput']").value;
